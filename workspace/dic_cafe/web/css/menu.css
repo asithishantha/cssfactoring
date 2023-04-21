@@ -60,6 +60,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
   }
+
   .menu_item {
     width: 49%;
     display: flex;
@@ -67,6 +68,11 @@
     box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
     margin-bottom: 20px;
   }
+
+  .menu_item-full-width {
+    width: 100%;
+  }
+  
   .menu_item_content {
     width: 45%;
     padding: 10px;
@@ -105,6 +111,15 @@
   .btn-detail {
     background: #6193bc;
     color: #fff;
+  }
+
+  .btn.sold_out {
+    background-color: grey;
+    color: black;
+  }
+  
+  .btn.sold_out::before {
+    content: "";
   }
 
   li {
